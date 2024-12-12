@@ -1,0 +1,79 @@
+/* Navbar container */
+.navbar {
+  background-color: #111315; /* Fundo cinza escuro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 0.5rem 1rem;
+  font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* Branco para contraste */
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  color: #e5ebeb; /* Cor clara para hover */
+  text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0; /* Cinza claro */
+  margin-right: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1e90ff; /* Azul vibrante para hover */
+  text-decoration: underline;
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+  color: #1e90ff; /* Azul vibrante para links ativos */
+  font-weight: bold;
+  border-bottom: 2px solid #1e90ff; /* Indicação de ativo */
+}
+
+/* Disabled link */
+.navbar-nav .nav-link.disabled {
+  color: #888888; /* Cinza médio para desabilitado */
+  cursor: not-allowed;
+}
+
+/* Right-aligned links */
+.navbar-nav.ms-auto .nav-link {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.navbar-nav.ms-auto .nav-link:hover {
+  color: #28a745; /* Verde para hover em login */
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  border: none;
+  background-color: #1e90ff; /* Azul vibrante para o botão de toggle */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28240,240,240,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Collapsible menu */
+.collapse .navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}

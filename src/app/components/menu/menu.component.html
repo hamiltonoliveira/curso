@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <div class="container-fluid">
+      <a href="#" class="navbar-brand">Curso EAD</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+         <select style="width: 200px;" class="form-select form-select-sm" aria-label=".form-select-sm example" (change)="onSelectChange($event)">
+            <option selected>Cadastro</option>
+            <option value="1">Aluno</option>
+            <option value="2">Professor</option>
+            <option value="3">Curso</option>
+          </select>
+
+
+          <div class="navbar-nav ms-auto">
+              <a href="#" class="nav-item nav-link">Login</a>
+          </div>
+      </div>
+  </div>
+</nav>
