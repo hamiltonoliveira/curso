@@ -6,7 +6,7 @@ const routes: Routes = [
  { path: 'app-home', component: MenuComponent },
   {
     path: 'curso',
-    loadChildren: () => import('./curso/curso.module').then(m => m.CursoModule)
+    loadChildren: () => import('./components/curso/curso.module').then(m => m.CursoModule)
   }
 ];
 @NgModule({
